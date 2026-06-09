@@ -1,0 +1,8 @@
+name = "aitools"
+type = "pages"
+
+[pages]
+  directory = "dist"
+
+[[pages.deploy]]
+  bucket = "./dist"

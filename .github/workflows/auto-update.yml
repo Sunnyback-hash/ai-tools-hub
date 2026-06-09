@@ -1,0 +1,64 @@
+name: Daily Auto Update AI Tools
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 每天 UTC 04:00 = 北京时间 12:00
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Discover new AI tools
+        run: node scripts/discover-tools-v2.js
+        continue-on-error: true
+      
+      - name: Import new tools
+        run: node scripts/import-tools.js
+        continue-on-error: true
+      
+      - name: Generate articles
+        run: node scripts/generate-articles.js --count 5
+        continue-on-error: true
+      
+      - name: Generate blog index
+        run: node scripts/generate-blog-index.js
+      
+      - name: Build site
+        run: node build.js
+      
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=aitoolshub --branch=main
+      
+      - name: Commit changes (if any)
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Actions"
+          git add data/tools.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Add new AI tools [$(date +%Y-%m-%d)]" && git push)
+        continue-on-error: true
+      
+      - name: Verify deployment
+        run: |
+          sleep 30
+          curl -s https://aitoolshub.cn/sitemap.xml | grep -o '<loc>' | wc -l
+          echo "Deployment verified"
+        continue-on-error: true

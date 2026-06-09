@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+auto-update.log
+npm-debug.log*
+.env.*

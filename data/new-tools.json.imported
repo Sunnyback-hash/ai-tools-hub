@@ -1,0 +1,953 @@
+[
+  {
+    "name": "Gamma",
+    "slug": "gamma",
+    "url": "https://gamma.app",
+    "description": "AI presentation and document builder that creates polished slides, docs, and webpages from prompts.",
+    "category": "ai-productivity",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Time-saving automation",
+      "Intuitive interface",
+      "Integration with popular tools"
+    ],
+    "cons": [
+      "Setup time required",
+      "Integration gaps"
+    ],
+    "rating": 4,
+    "tags": [
+      "presentation",
+      "document",
+      "design"
+    ],
+    "featured": false,
+    "alternatives": [
+      "notion-ai",
+      "otter-ai",
+      "taskade"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Zapier AI",
+    "slug": "zapier-ai",
+    "url": "https://zapier.com",
+    "description": "AI-enhanced workflow automation platform connecting 6,000+ apps with natural language automation builder.",
+    "category": "ai-productivity",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Time-saving automation",
+      "Intuitive interface",
+      "Integration with popular tools",
+      "Real-time collaboration"
+    ],
+    "cons": [
+      "Setup time required",
+      "Integration gaps",
+      "Privacy concerns"
+    ],
+    "rating": 4,
+    "tags": [
+      "automation",
+      "workflow",
+      "integration"
+    ],
+    "featured": false,
+    "alternatives": [
+      "notion-ai",
+      "otter-ai",
+      "taskade"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Fireflies.ai",
+    "slug": "firefliesai",
+    "url": "https://fireflies.ai",
+    "description": "AI meeting assistant that auto-records, transcribes, and extracts action items from meetings.",
+    "category": "ai-productivity",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Time-saving automation",
+      "Intuitive interface",
+      "Integration with popular tools"
+    ],
+    "cons": [
+      "Setup time required",
+      "Integration gaps",
+      "Privacy concerns"
+    ],
+    "rating": 4,
+    "tags": [
+      "meeting",
+      "transcription",
+      "collaboration"
+    ],
+    "featured": false,
+    "alternatives": [
+      "notion-ai",
+      "otter-ai",
+      "taskade"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Tome",
+    "slug": "tome",
+    "url": "https://tome.app",
+    "description": "AI-native storytelling format that generates presentations, landing pages, and visual documents.",
+    "category": "ai-productivity",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Time-saving automation",
+      "Intuitive interface",
+      "Integration with popular tools"
+    ],
+    "cons": [
+      "Setup time required",
+      "Integration gaps"
+    ],
+    "rating": 4,
+    "tags": [
+      "presentation",
+      "storytelling",
+      "design"
+    ],
+    "featured": false,
+    "alternatives": [
+      "notion-ai",
+      "otter-ai",
+      "taskade"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Ideogram",
+    "slug": "ideogram",
+    "url": "https://ideogram.ai",
+    "description": "AI image generator excelling at text rendering within images, ideal for logos, posters, and typography.",
+    "category": "ai-image",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control"
+    ],
+    "rating": 4,
+    "tags": [
+      "image",
+      "text rendering",
+      "design"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Flux AI",
+    "slug": "flux-ai",
+    "url": "https://flux1.ai",
+    "description": "Open-source AI image generation model by Black Forest Labs with state-of-the-art photorealism.",
+    "category": "ai-image",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control"
+    ],
+    "rating": 4,
+    "tags": [
+      "image",
+      "open source",
+      "art"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Lovable",
+    "slug": "lovable",
+    "url": "https://lovable.dev",
+    "description": "AI-powered full-stack web app builder that generates complete applications from natural language prompts.",
+    "category": "ai-coding",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Accurate code generation",
+      "Multiple language support",
+      "IDE integration"
+    ],
+    "cons": [
+      "May need manual review",
+      "Large codebase slowdown"
+    ],
+    "rating": 4,
+    "tags": [
+      "coding",
+      "web builder",
+      "full-stack"
+    ],
+    "featured": false,
+    "alternatives": [
+      "github-copilot",
+      "cursor",
+      "codeium"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Bolt.new",
+    "slug": "boltnew",
+    "url": "https://bolt.new",
+    "description": "AI development environment by StackBlitz that builds and deploys full-stack apps in the browser.",
+    "category": "ai-coding",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Accurate code generation",
+      "Multiple language support",
+      "IDE integration",
+      "Context-aware suggestions"
+    ],
+    "cons": [
+      "May need manual review",
+      "Large codebase slowdown"
+    ],
+    "rating": 4,
+    "tags": [
+      "coding",
+      "web builder",
+      "prototyping"
+    ],
+    "featured": false,
+    "alternatives": [
+      "github-copilot",
+      "cursor",
+      "codeium"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Codium AI",
+    "slug": "codium-ai",
+    "url": "https://codium.ai",
+    "description": "AI code analysis tool that generates meaningful test suites and identifies code issues automatically.",
+    "category": "ai-coding",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Accurate code generation",
+      "Multiple language support",
+      "IDE integration"
+    ],
+    "cons": [
+      "May need manual review",
+      "Large codebase slowdown",
+      "Context window limitations"
+    ],
+    "rating": 4,
+    "tags": [
+      "coding",
+      "testing",
+      "review"
+    ],
+    "featured": false,
+    "alternatives": [
+      "github-copilot",
+      "cursor",
+      "codeium"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Kaggle AI",
+    "slug": "kaggle-ai",
+    "url": "https://kaggle.com",
+    "description": "Google platform for data science competitions, datasets, notebooks, and ML model collaboration.",
+    "category": "ai-research",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "Credible source citations",
+      "Comprehensive analysis",
+      "Time-efficient research"
+    ],
+    "cons": [
+      "May miss niche sources",
+      "English bias in coverage"
+    ],
+    "rating": 4,
+    "tags": [
+      "data science",
+      "machine learning",
+      "competition"
+    ],
+    "featured": false,
+    "alternatives": [
+      "perplexity",
+      "elicit",
+      "consensus"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Semantic Scholar",
+    "slug": "semantic-scholar",
+    "url": "https://semanticscholar.org",
+    "description": "AI-enhanced academic search engine by AI2 that helps researchers find relevant papers efficiently.",
+    "category": "ai-research",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "Credible source citations",
+      "Comprehensive analysis",
+      "Time-efficient research",
+      "Multi-database search"
+    ],
+    "cons": [
+      "May miss niche sources",
+      "English bias in coverage",
+      "Requires verification"
+    ],
+    "rating": 4,
+    "tags": [
+      "research",
+      "papers",
+      "citations"
+    ],
+    "featured": false,
+    "alternatives": [
+      "perplexity",
+      "elicit",
+      "consensus"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "ChatPDF",
+    "slug": "chatpdf",
+    "url": "https://chatpdf.com",
+    "description": "AI tool for chatting with PDF documents - upload a PDF and ask questions about its contents.",
+    "category": "ai-research",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Credible source citations",
+      "Comprehensive analysis",
+      "Time-efficient research"
+    ],
+    "cons": [
+      "May miss niche sources",
+      "English bias in coverage"
+    ],
+    "rating": 4,
+    "tags": [
+      "pdf",
+      "document",
+      "analysis"
+    ],
+    "featured": false,
+    "alternatives": [
+      "perplexity",
+      "elicit",
+      "consensus"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Jasper Art",
+    "slug": "jasper-art",
+    "url": "https://jasper.ai/art",
+    "description": "AI art generator integrated into Jasper marketing platform for creating marketing visuals from prompts.",
+    "category": "ai-image",
+    "pricing": "paid",
+    "priceFrom": 49,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options",
+      "Easy to use interface"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control",
+      "Output inconsistency"
+    ],
+    "rating": 4,
+    "tags": [
+      "art",
+      "marketing",
+      "illustration"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Removal.ai",
+    "slug": "removalai",
+    "url": "https://removal.ai",
+    "description": "AI background removal tool that accurately separates subjects from backgrounds in photos.",
+    "category": "ai-image",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control"
+    ],
+    "rating": 4,
+    "tags": [
+      "background",
+      "editing",
+      "photo"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Upscayl",
+    "slug": "upscayl",
+    "url": "https://upscayl.org",
+    "description": "Open-source AI image upscaler that enhances photo resolution using advanced AI models locally.",
+    "category": "ai-image",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control"
+    ],
+    "rating": 4,
+    "tags": [
+      "upscale",
+      "enhancement",
+      "photo"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "AIVA",
+    "slug": "aiva",
+    "url": "https://aiva.ai",
+    "description": "AI music composer that creates original soundtracks for films, games, ads, and videos.",
+    "category": "ai-audio",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Natural sounding voices",
+      "Multiple voice options",
+      "Fast processing speed"
+    ],
+    "cons": [
+      "Robotic edge cases",
+      "Limited emotional range",
+      "Processing time for long audio"
+    ],
+    "rating": 4,
+    "tags": [
+      "music",
+      "composition",
+      "creative"
+    ],
+    "featured": false,
+    "alternatives": [
+      "elevenlabs",
+      "suno",
+      "murf-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Cleanvoice AI",
+    "slug": "cleanvoice-ai",
+    "url": "https://cleanvoice.ai",
+    "description": "AI audio post-processing tool that removes filler words, mouth sounds, and background noise from recordings.",
+    "category": "ai-audio",
+    "pricing": "paid",
+    "priceFrom": 10,
+    "pros": [
+      "Natural sounding voices",
+      "Multiple voice options",
+      "Fast processing speed",
+      "Multiple language support"
+    ],
+    "cons": [
+      "Robotic edge cases",
+      "Limited emotional range",
+      "Processing time for long audio"
+    ],
+    "rating": 4,
+    "tags": [
+      "audio",
+      "editing",
+      "podcast"
+    ],
+    "featured": false,
+    "alternatives": [
+      "elevenlabs",
+      "suno",
+      "murf-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "AdCreative.ai",
+    "slug": "adcreativeai",
+    "url": "https://adcreative.ai",
+    "description": "AI platform that generates high-converting ad creatives and social media posts optimized for performance.",
+    "category": "ai-marketing",
+    "pricing": "paid",
+    "priceFrom": 29,
+    "pros": [
+      "ROI optimization",
+      "Data-driven insights",
+      "A/B testing support",
+      "Multi-channel integration"
+    ],
+    "cons": [
+      "Data privacy concerns",
+      "Over-automation risk"
+    ],
+    "rating": 4,
+    "tags": [
+      "ad",
+      "creative",
+      "social media"
+    ],
+    "featured": false,
+    "alternatives": [
+      "semrush",
+      "surfer-seo",
+      "hubspot-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Brevo AI",
+    "slug": "brevo-ai",
+    "url": "https://brevo.com",
+    "description": "AI-enhanced email marketing platform with smart send-time optimization and content generation.",
+    "category": "ai-marketing",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "ROI optimization",
+      "Data-driven insights",
+      "A/B testing support"
+    ],
+    "cons": [
+      "Data privacy concerns",
+      "Over-automation risk",
+      "Learning curve for setup"
+    ],
+    "rating": 4,
+    "tags": [
+      "email",
+      "marketing",
+      "campaign"
+    ],
+    "featured": false,
+    "alternatives": [
+      "semrush",
+      "surfer-seo",
+      "hubspot-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Buffer AI",
+    "slug": "buffer-ai",
+    "url": "https://buffer.com",
+    "description": "Social media management tool with AI assistant for generating post ideas and optimizing engagement.",
+    "category": "ai-marketing",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "ROI optimization",
+      "Data-driven insights",
+      "A/B testing support"
+    ],
+    "cons": [
+      "Data privacy concerns",
+      "Over-automation risk",
+      "Learning curve for setup"
+    ],
+    "rating": 4,
+    "tags": [
+      "social media",
+      "scheduling",
+      "analytics"
+    ],
+    "featured": false,
+    "alternatives": [
+      "semrush",
+      "surfer-seo",
+      "hubspot-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "SerpAPI",
+    "slug": "serpapi",
+    "url": "https://serpapi.com",
+    "description": "Real-time search API that provides structured search data for SEO tools and marketing automation.",
+    "category": "ai-marketing",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "ROI optimization",
+      "Data-driven insights",
+      "A/B testing support"
+    ],
+    "cons": [
+      "Data privacy concerns",
+      "Over-automation risk",
+      "Learning curve for setup"
+    ],
+    "rating": 4,
+    "tags": [
+      "seo",
+      "search",
+      "api"
+    ],
+    "featured": false,
+    "alternatives": [
+      "semrush",
+      "surfer-seo",
+      "hubspot-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Miro AI",
+    "slug": "miro-ai",
+    "url": "https://miro.com",
+    "description": "AI-enhanced collaborative whiteboard for brainstorming, planning, and visual project management.",
+    "category": "ai-productivity",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Time-saving automation",
+      "Intuitive interface",
+      "Integration with popular tools"
+    ],
+    "cons": [
+      "Setup time required",
+      "Integration gaps"
+    ],
+    "rating": 4,
+    "tags": [
+      "collaboration",
+      "whiteboard",
+      "brainstorming"
+    ],
+    "featured": false,
+    "alternatives": [
+      "notion-ai",
+      "otter-ai",
+      "taskade"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Arc Browser",
+    "slug": "arc-browser",
+    "url": "https://arc.net",
+    "description": "AI-powered web browser with built-in AI search, auto-organize tabs, and smart browsing features.",
+    "category": "ai-productivity",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "Time-saving automation",
+      "Intuitive interface",
+      "Integration with popular tools",
+      "Real-time collaboration"
+    ],
+    "cons": [
+      "Setup time required",
+      "Integration gaps",
+      "Privacy concerns"
+    ],
+    "rating": 4,
+    "tags": [
+      "browser",
+      "productivity",
+      "search"
+    ],
+    "featured": false,
+    "alternatives": [
+      "notion-ai",
+      "otter-ai",
+      "taskade"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Tabnine",
+    "slug": "tabnine",
+    "url": "https://tabnine.com",
+    "description": "AI code completion assistant focused on privacy, running locally to suggest code completions in real-time.",
+    "category": "ai-coding",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Accurate code generation",
+      "Multiple language support",
+      "IDE integration",
+      "Context-aware suggestions"
+    ],
+    "cons": [
+      "May need manual review",
+      "Large codebase slowdown"
+    ],
+    "rating": 4,
+    "tags": [
+      "autocomplete",
+      "coding",
+      "privacy"
+    ],
+    "featured": false,
+    "alternatives": [
+      "github-copilot",
+      "cursor",
+      "codeium"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Weights & Biases",
+    "slug": "weights-biases",
+    "url": "https://wandb.ai",
+    "description": "ML experiment tracking and model management platform for machine learning teams and researchers.",
+    "category": "ai-research",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Credible source citations",
+      "Comprehensive analysis",
+      "Time-efficient research"
+    ],
+    "cons": [
+      "May miss niche sources",
+      "English bias in coverage",
+      "Requires verification"
+    ],
+    "rating": 4,
+    "tags": [
+      "ml",
+      "experiment",
+      "tracking"
+    ],
+    "featured": false,
+    "alternatives": [
+      "perplexity",
+      "elicit",
+      "consensus"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Roboflow",
+    "slug": "roboflow",
+    "url": "https://roboflow.com",
+    "description": "Computer vision platform for building, training, and deploying custom AI models with dataset management.",
+    "category": "ai-image",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options",
+      "Easy to use interface"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control"
+    ],
+    "rating": 4,
+    "tags": [
+      "computer vision",
+      "dataset",
+      "annotation"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "AutoGPT",
+    "slug": "autogpt",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "description": "Open-source autonomous AI agent that chains LLM calls to accomplish complex tasks independently.",
+    "category": "ai-chatbot",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "Intuitive conversational interface",
+      "Context-aware responses",
+      "Multi-language support"
+    ],
+    "cons": [
+      "May produce inaccurate information",
+      "Limited offline capability"
+    ],
+    "rating": 4,
+    "tags": [
+      "autonomous",
+      "agent",
+      "automation"
+    ],
+    "featured": false,
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Bing Image Creator",
+    "slug": "bing-image-creator",
+    "url": "https://bing.com/create",
+    "description": "Free AI image generator powered by DALL-E, accessible through Microsoft Bing with daily boost credits.",
+    "category": "ai-image",
+    "pricing": "free",
+    "priceFrom": 0,
+    "pros": [
+      "High-quality output",
+      "Fast generation speed",
+      "Multiple style options",
+      "Easy to use interface"
+    ],
+    "cons": [
+      "May require prompt engineering",
+      "Limited fine control"
+    ],
+    "rating": 4,
+    "tags": [
+      "image",
+      "free",
+      "creative"
+    ],
+    "featured": false,
+    "alternatives": [
+      "midjourney",
+      "dalle",
+      "leonardo-ai"
+    ],
+    "discovered": true,
+    "needsReview": true
+  },
+  {
+    "name": "Zhipu AI",
+    "slug": "zhipu-ai",
+    "url": "https://zhipuai.cn",
+    "description": "Leading Chinese AI company offering GLM series models for chat, coding, and multimodal tasks.",
+    "category": "ai-chatbot",
+    "pricing": "freemium",
+    "priceFrom": 0,
+    "pros": [
+      "Intuitive conversational interface",
+      "Context-aware responses",
+      "Multi-language support",
+      "Fast response times"
+    ],
+    "cons": [
+      "May produce inaccurate information",
+      "Limited offline capability"
+    ],
+    "rating": 4,
+    "tags": [
+      "chatbot",
+      "chinese",
+      "multimodal"
+    ],
+    "featured": false,
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "discovered": true,
+    "needsReview": true
+  }
+]

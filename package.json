@@ -1,0 +1,27 @@
+{
+  "name": "ai-tools-hub",
+  "version": "1.0.0",
+  "description": "AI Tools Hub - Discover, Compare & Choose the Best AI Tools",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "npx serve dist -p 3000",
+    "validate": "node scripts/validate.js",
+    "discover": "node scripts/discover-tools.js",
+    "import": "node scripts/add-tool.js import",
+    "add": "node scripts/add-tool.js interactive",
+    "articles": "node scripts/generate-articles.js",
+    "pipeline": "node scripts/pipeline.js",
+    "blog-index": "node scripts/generate-blog-index.js",
+    "deploy": "npx wrangler pages deploy dist --project-name aitools --branch main",
+    "auto": "node scripts/auto-update-deploy.js"
+  },
+  "keywords": [
+    "ai-tools",
+    "directory",
+    "comparison"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.96.0"
+  }
+}
