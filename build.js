@@ -8,6 +8,9 @@ const path = require('path');
   // 版本号：强制 Wrangler 重新上传（每次构建不同）
   const buildVer = new Date().toISOString();
 
+// Google AdSense code
+const ADSENSE_CODE = '  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3362391181724689"\n     crossorigin="anonymous"></script>';
+
 const CATEGORIES = {
   'ai-chatbot': { name: 'AI Chatbots', icon: 'message-circle', color: '#4F46E5' },
   'ai-image': { name: 'AI Image', icon: 'image', color: '#EC4899' },
@@ -159,6 +162,7 @@ function generateHomepage() {
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"AI Tools Hub","url":"https://aitoolshub.com","description":"Discover and compare the best AI tools","potentialAction":{"@type":"SearchAction","target":"https://aitoolshub.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
   </script>
+  ${ADSENSE_CODE}
 </head>
 <body>
 ${renderHeader('/')}
@@ -370,6 +374,7 @@ function generateToolPages() {
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"SoftwareApplication","name":"${escapeHtml(tool.name)}","applicationCategory":"${cat.name}","description":"${escapeHtml(tool.description.substring(0, 200))}","url":"${tool.url}","offers":[{"@type":"Offer","price":"${tool.priceFrom || 0}","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","billingDuration":{"@type":"QuantitativeValue","value":"P1M"}}}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"${tool.rating}","ratingCount":"100","bestRating":"5","worstRating":"1"}}
   </script>
+  ${ADSENSE_CODE}
 </head>
 <body>
 ${renderHeader(`/tools/${tool.slug}`)}
@@ -473,7 +478,9 @@ function generateCategoryPages() {
   const indexHtml = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>All Categories - AI Tools Hub</title><meta name="description" content="Browse all 10 AI tool categories: Chatbots, Image, Video, Coding, Writing, Research, Audio, Design, Productivity, and Marketing.">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader('categor')}
   <div class="container"><div class="page">
     <h1>All AI Tool Categories</h1>
@@ -492,7 +499,9 @@ ${renderFooter()}</body></html>`;
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${cat.name} Tools - ${catTools.length}+ Best AI ${cat.name.replace('AI ','')} Tools | AI Tools Hub</title>
 <meta name="description" content="Discover the best ${cat.name.toLowerCase()} tools in 2026. Compare ${catTools.length}+ ${cat.name.toLowerCase()} AI tools with reviews, pricing, and ratings.">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader(`categories/${slug}`)}
   <div class="container"><div class="tools-section">
     <div class="breadcrumb"><a href="/">Home</a><span class="sep">/</span><a href="/categories">Categories</a><span class="sep">/</span><span>${cat.name}</span></div>
@@ -521,7 +530,9 @@ function generateComparisonPage() {
 <title>ChatGPT vs Claude vs Gemini (2026) - Full Comparison | AI Tools Hub</title>
 <meta name="description" content="ChatGPT vs Claude vs Gemini: detailed comparison of features, pricing, performance, and best use cases in 2026. Find which AI chatbot is right for you.">
 <meta property="og:title" content="ChatGPT vs Claude vs Gemini (2026) - Full Comparison">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader('compare')}
   <div class="article">
     <h1>ChatGPT vs Claude vs Gemini: The Ultimate AI Chatbot Comparison (2026)</h1>
@@ -627,7 +638,9 @@ function generateBlogPages() {
 <title>50 Best AI Tools in 2026 (Expert Curated List) | AI Tools Hub</title>
 <meta name="description" content="Our expert-curated list of the 50 best AI tools in 2026. Compare top AI tools for writing, coding, design, video, and more with ratings and pricing.">
 <meta property="og:title" content="50 Best AI Tools in 2026 - Expert Curated">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader('blog')}
   <div class="article">
     <h1>50 Best AI Tools in 2026: The Definitive Expert List</h1>
@@ -693,7 +706,9 @@ ${renderFooter()}</body></html>`;
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Best Free AI Tools 2026 - Top 20 No-Cost AI Tools | AI Tools Hub</title>
 <meta name="description" content="Discover the 20 best free AI tools in 2026. No credit card required. Compare free AI tools for writing, coding, image generation, and more.">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader('blog')}
   <div class="article">
     <h1>20 Best Free AI Tools in 2026 (No Credit Card Required)</h1>
@@ -719,7 +734,9 @@ ${renderFooter()}</body></html>`;
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>15 Best AI Tools for Students 2026 - Study Smarter | AI Tools Hub</title>
 <meta name="description" content="The 15 best AI tools for students in 2026. Free and affordable AI tools for writing, research, math, language learning, and exam preparation.">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader('blog')}
   <div class="article">
     <h1>15 Best AI Tools for Students in 2026: Study Smarter, Not Harder</h1>
@@ -806,6 +823,7 @@ function generateBlogIndex() {
   <meta property="og:description" content="Expert AI tool reviews, comparisons, and guides for 2026.">
   <link rel="canonical" href="https://aitoolshub.cn/blog/">
   <link rel="stylesheet" href="/css/style.css">
+  ${ADSENSE_CODE}
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Blog","name":"AI Tools Hub Blog","description":"Expert AI tool reviews and guides","url":"https://aitoolshub.cn/blog/"}
   </script>
@@ -846,7 +864,9 @@ function generateStaticPages() {
     const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${page.title} | AI Tools Hub</title><meta name="description" content="${page.desc}">
-<link rel="stylesheet" href="/css/style.css"></head>
+<link rel="stylesheet" href="/css/style.css">
+${ADSENSE_CODE}
+</head>
 <body>${renderHeader(page.name)}
   <div class="container"><div class="page">${page.content}</div></div>
 ${renderFooter()}</body></html>`;
@@ -931,6 +951,11 @@ function generateSitemapAndRobots() {
   const robots = 'User-agent: *\nAllow: /\n\nSitemap: ' + BASE + '/sitemap.xml\n';
   write('robots.txt', robots);
   console.log('  [OK] robots.txt');
+
+  // Generate ads.txt for Google AdSense
+  const adsTxt = 'google.com, pub-3362391181724689, DIRECT, f08c47fec0942fa0\n';
+  write('ads.txt', adsTxt);
+  console.log('  [OK] ads.txt (Google AdSense)');
 }
 
 // Copy JS
