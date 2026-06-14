@@ -26,6 +26,8 @@ jobs:
       - name: Discover new AI tools
         run: node scripts/discover-tools-v2.js
         continue-on-error: true
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       
       - name: Import new tools
         run: node scripts/import-tools.js
@@ -34,6 +36,8 @@ jobs:
       - name: Generate articles
         run: node scripts/generate-articles.js --count 5
         continue-on-error: true
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       
       - name: Generate blog index
         run: node scripts/generate-blog-index.js
@@ -41,12 +45,15 @@ jobs:
       - name: Build site
         run: node build.js
       
+      - name: Force file hash change
+        run: echo "" >> dist/index.html && echo "<!-- build: $(date +%Y-%m-%d_%H-%M-%S) -->" >> dist/index.html
+      
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=aitoolshub --branch=main
+          command: pages deploy dist --project-name=aitoolshub --commit-dirty=true
       
       - name: Commit changes (if any)
         run: |
@@ -55,6 +62,8 @@ jobs:
           git add data/tools.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Add new AI tools [$(date +%Y-%m-%d)]" && git push)
         continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Verify deployment
         run: |
